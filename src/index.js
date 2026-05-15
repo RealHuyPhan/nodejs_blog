@@ -28,6 +28,14 @@ app.get("/news", (req, res) => {
   res.render("news");
 });
 
+app.get("/search", (req, res) => {
+  res.render("search");
+});
+
+app.post("/search", (req, res) => {
+  res.send("search post");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
